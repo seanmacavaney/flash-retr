@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flash-retr"
+description = "flash-retr (placeholder)"
+requires-python = ">=3.9"
+authors = [
+  {name = "Sean MacAvaney", email = "sean.macavaney@glasgow.ac.uk"},
+]
+maintainers = [
+  {name = "Sean MacAvaney", email = "sean.macavaney@glasgow.ac.uk"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/seanmacavaney/flash-retr"
+
+[tool.setuptools.dynamic]
+version = {attr = "flash_retr.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["flash_retr*"]
